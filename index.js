@@ -204,7 +204,7 @@ var Swipeout = React.createClass({
 //  close swipeout on button press
 , _autoClose: function(btn) {
     var onPress = btn.onPress
-    if (onPress) onPress()
+    if (onPress) onPress(btn.id)
     if (this.state.autoClose) this._close()
   }
 , _close: function() {
